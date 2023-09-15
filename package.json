@@ -1,0 +1,18 @@
+{
+  "version": "0.1",
+  "name": "bun-rest",
+  "module": "index.ts",
+  "type": "module",
+  "license": "MIT",
+  "scripts": {
+    "dev": "bun --hot run src/index.ts"
+  },
+  "devDependencies": {
+    "bun-types": "latest",
+    "kolorist": "^1.8.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {}
+}
