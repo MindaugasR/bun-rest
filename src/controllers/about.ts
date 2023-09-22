@@ -1,3 +1,3 @@
 export const about = () => {
-  return "about";
+  return new Response("about");
 };

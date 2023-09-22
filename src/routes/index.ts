@@ -1,5 +1,9 @@
-import { Router } from "../lib/Router";
-import { home, about } from "../controllers";
+import { Router } from "../lib";
+import { home, about, user } from "../controllers";
 
-Router.get("/", home);
-Router.get("/about", about);
+Router.get("/", () => {
+  return new Response("Dashboard");
+});
+Router.get("/home", home);
+Router.get({ path: "/about" }, about);
+Router.get("/user/:id", user);

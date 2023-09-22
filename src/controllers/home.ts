@@ -1,3 +1,3 @@
 export const home = () => {
-  return "Hello";
+  return new Response("Hello");
 };
